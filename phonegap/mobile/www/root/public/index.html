@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+
+    <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/paper.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" media="screen" />
+
+    <script type="text/javascript" src="assets/lib/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/lib/fastclick/js/fastclick.min.js"></script>
+
+    <script type="text/javascript">
+      if (typeof jQuery === 'undefined') {
+        window.$ = window.jQuery = require(__dirname + '/assets/lib/jquery/js/jquery.min.js');
+      }
+      if (typeof FastClick === 'undefined') {
+        var attachFastClick = require('fastclick');
+        attachFastClick(document.body);
+      } else {
+        FastClick.attach(document.body);
+      }
+    </script>
+
+    <title>{{title}}</title>
+  </head>
+  <body>
+
+    <div id="wrapper" class="toggled">
+
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand">
+            <a href="#" class="menu-toggle">
+              {{title}}
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="App.notification.add('Dashboad');">Notification</a>
+          </li>
+          <li>
+            <a href="#" onclick="App.window.alert('Shortcuts');">Alert</a>
+          </li>
+          <li>
+            <a href="#" onclick="App.window.confirm('Did you like the overview?', function() {
+                        alert('Thank You');
+                      });">Confirm</a>
+          </li>
+          <li>
+            <a href="#" onclick="App.window.toast('Events');">Toast</a>
+          </li>
+          <li>
+            <a href="#" onclick="App.notification.vibrate('short or medium or long');">Vibrate</a>
+          </li>
+          <li>
+            <a href="#">Nothing</a>
+          </li>
+          <li>
+            <a href="#">Nothing</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <ul id="settings-menu" class="dropdown-menu">
+      <li><a href="#" onclick="App.settings();">Settings</a></li>
+      <li><a href="#" onclick="App.fullsreen();">FullScreen</a></li>
+      <li class="divider"></li>
+      <li><a href="#" onclick="App.exit();">Exit</a></li>
+    </ul>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle menu-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a href="#" class="navbar-brand menu-toggle">{{title}}</a>
+          <a href="#" class="navbar-brand menu-toggle" id="brand">
+            {{brand}}
+          </a>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="navbar-toggle dropdown-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="panel">
+        <div class="panel-body">
+
+          <button class="btn btn-default" data-action="app-open" data-value="manager.Usuario.list" data-load="false">List</button>
+
+        </div>
+      </div>
+    </header>
+
+    <page></page>
+
+    <modal>
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="large-modal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <!--<h4 class="modal-title">{{title}}</h4>-->
+            </div>
+            <div class="modal-body">
+              {{content}}
+            </div>
+            <div class="modal-footer" style="display: none;">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </modal>
+
+    <script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/lib/ejs/js/ejs.min.js"></script>
+
+    <!-- cordova -->
+    <!--<script type="text/javascript" src="cordova.js"></script>-->
+    <!--<script type="text/javascript" src="assets/lib/smoothie/standalone/require.js"></script>-->
+    <!--<script type="text/javascript" src="assets/lib/sql.js/js/worker.sql.js"></script>-->
+
+    <script type="text/javascript" src="../api/core/App.js"></script>
+
+    <script type="text/javascript">
+      /**
+       *
+       * @type String|@exp;device@pro;platform|String
+       */
+      var platform = 'webapp'
+        , path = ''
+        , storage = '';
+
+      if (window.location.hash === '#phonegap') {
+
+        platform = 'phonegap';
+        path = '/android/www/root';
+        storage = 'LocalStorage.js';
+
+        document.write('<script type="text/javascript" src="cordova.js"><\/script>');
+        document.write('<script type="text/javascript" src="assets/lib/smoothie/standalone/require.js"><\/script>');
+        document.write('<script type="text/javascript" src="assets/lib/localstorage/js/localstorage.min.js"><\/script>');
+
+        var Smoothie = {
+          'main': null,
+          'requirePath': ['/'],
+          'requirePreloaded': new Object(),
+          'requireCompiler': function(source) {
+            return source;
+          }
+        };
+      }
+    </script>
+    <script type="text/javascript">
+      jQuery(function() {
+        /**
+         * detect electron
+         */
+        if (typeof process !== 'undefined') {
+          platform = 'electron';
+        }
+        /**
+         *
+         * detect phonegap
+         */
+        var mobile = platform !== 'electron' && document.URL.indexOf('http://') === -1 && document.URL.indexOf('https://') === -1;
+        if (mobile) {
+
+          App.init(true, (typeof device === 'undefined') ? 'mobile' : device.platform, path);
+        } else {
+
+          App.init(true, platform, path, storage);
+        }
+      });
+    </script>
+    
+    <script type="text/javascript" src="assets/js/listen.js"></script>
+  </body>
+</html>
+

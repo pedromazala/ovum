@@ -1,0 +1,15 @@
+{
+  "name": "ovum.phonegap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dracones.io",
+  "license": "MIT",
+  "dependencies": {
+    "phonegap": "^5.1.1",
+    "ripple-emulator": "^0.9.30"
+  }
+}

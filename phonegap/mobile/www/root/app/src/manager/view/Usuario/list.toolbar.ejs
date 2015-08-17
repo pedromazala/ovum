@@ -1,0 +1,33 @@
+<div class="toolbar-manager">
+  <button type="button" id="list-target-2" class="btn btn-primary" data-action="app-open" data-value="manager.Usuario.set" data-load="true" data-view="popup">
+    <%= lang.toolbar.list.add.label %>
+  </button> 
+  <button type="button" id="add-target-2" class="btn btn-default" data-action="app-open" data-value="manager.Usuario.search" data-load="true" data-view="popup">
+    <%= lang.toolbar.list.search.label %>
+  </button> 
+  <button type="button" id="list-target-2" class="btn btn-default" data-action="view" data-value="list" data-layout="list" data-confirm="" data-custom="">
+    <%= lang.toolbar.list.clear.label %>
+  </button>
+  <div class="btn-group <%= orientation %>">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      <%= lang.toolbar.list.options.label %> <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+      <li>
+        <a id="list-target-2" href="javascript:void(0);" class="" data-action="view" data-value="list" data-layout="list" data-confirm="" data-custom="r=true">
+          <%= lang.toolbar.list.add.label %>                      </a>
+      </li>
+      <li>
+        <a id="add-target-2" href="javascript:void(0);" class="" data-action="view" data-value="add" data-layout="manager" data-confirm="" data-custom="">
+          <%= lang.toolbar.list.search.label %>
+        </a>
+      </li>
+      <li>
+        <a id="list-target-2" href="javascript:void(0);" class="" data-action="view" data-value="list" data-layout="list" data-confirm="" data-custom="">
+          <%= lang.toolbar.list.clear.label %>
+        </a>
+      </li>
+    </ul>
+  </div>  
+  <div id="message-target-2" style="display: inline-block"></div>
+</div>

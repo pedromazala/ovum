@@ -1,0 +1,180 @@
+
+<div class="panel toolbar-top">
+  <div class="panel-body">
+
+    <%- toolbar.top %>
+     
+  </div>
+</div>
+
+<ul id="tabs" class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#home" data-toggle="tab"><%= lang.form.search.header.label %></a>
+  </li>
+</ul>
+
+<div class="tab-content">
+
+  <div class="tab-pane active" id="home">
+
+    <div class="panel">
+      <div class="panel-body">
+
+        <form id="form-target-2" name="form-target-2" role="form" onsubmit="return false;" action="return false;">
+
+          <div class="box-body">
+            <div id="target-2-line-1" class="row">
+              <div class="col-md-12 col-sm-12">
+                <div class="form-group">
+                  <label class="label-form-control" data-form="true" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="<%= lang.form.search.usu_codigo.label %>" data-content="<%= lang.form.search.usu_codigo.title %>">
+                    <%= lang.form.search.usu_codigo.label %>
+                  </label>
+                  <input type="text" name="usu_codigo" id="usu_codigo" data-bind="{{usu_codigo}}" class="form-control available int" autocomplete="off" placeholder="<%= lang.form.search.usu_codigo.placeholder %>"/>
+                </div>
+              </div>
+            </div>
+            <div id="target-2-line-2" class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label class="label-form-control" data-form="true" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="<%= lang.form.search.usu_cod_USUARIO_TIPO.label %>" data-content="<%= lang.form.search.usu_cod_USUARIO_TIPO.title %>">
+                    <%= lang.form.search.usu_cod_USUARIO_TIPO.label %>
+                  </label>
+                  <input type="text" name="usu_cod_USUARIO_TIPO" id="usu_cod_USUARIO_TIPO" data-bind="{{usu_cod_USUARIO_TIPO}}" class="form-control available string" autocomplete="off" placeholder="<%= lang.form.search.usu_cod_USUARIO_TIPO.placeholder %>"/>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label class="label-form-control" data-form="true" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="<%= lang.form.search.usu_cod_INSTITUICAO.label %>" data-content="<%= lang.form.search.usu_cod_INSTITUICAO.title %>">
+                    <%= lang.form.search.usu_cod_INSTITUICAO.label %>
+                  </label>
+                  <input type="text" name="usu_cod_INSTITUICAO" id="usu_cod_INSTITUICAO" data-bind="{{usu_cod_INSTITUICAO}}" class="form-control available string" autocomplete="off" placeholder="<%= lang.form.search.usu_cod_INSTITUICAO.placeholder %>"/>
+                </div>
+              </div>
+            </div>
+            <div id="target-2-line-3" class="row">
+              <div class="col-md-12 col-sm-12">
+                <div class="form-group">
+                  <label class="label-form-control" data-form="true" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="<%= lang.form.search.usu_nome.label %>" data-content="<%= lang.form.search.usu_nome.title %>">
+                    <%= lang.form.search.usu_nome.label %>
+                  </label>
+                  <input type="text" name="usu_nome" id="usu_nome" data-bind="{{usu_nome}}" class="form-control available upper" autocomplete="off" placeholder="<%= lang.form.search.usu_nome.placeholder %>"/>
+                </div>
+              </div>
+            </div>
+            <div id="target-2-line-4" class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label class="label-form-control" data-form="true" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="<%= lang.form.search.usu_telefone.label %>" data-content="<%= lang.form.search.usu_telefone.title %>">
+                    <%= lang.form.search.usu_telefone.label %>
+                  </label>
+                  <input type="text" name="usu_telefone" id="usu_telefone" data-bind="{{usu_telefone}}" class="form-control available telefone" autocomplete="off" placeholder="<%= lang.form.search.usu_telefone.placeholder %>"/>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label class="label-form-control" data-form="true" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="<%= lang.form.search.usu_celular.label %>" data-content="<%= lang.form.search.usu_celular.title %>">
+                    <%= lang.form.search.usu_celular.label %>
+                  </label>
+                  <input type="text" name="usu_celular" id="usu_celular" data-bind="{{usu_celular}}" class="form-control available telefone" autocomplete="off" placeholder="<%= lang.form.search.usu_celular.label %>"/>
+                </div>
+              </div>
+            </div>
+            <div id="target-2-line-5" class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label class="label-form-control" data-form="true" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="<%= lang.form.search.usu_login.label %>" data-content="<%= lang.form.search.usu_login.title %>">
+                    <%= lang.form.search.usu_login.label %>
+                  </label>
+                  <input type="text" name="usu_login" id="usu_login" data-bind="{{usu_login}}" class="form-control available string" autocomplete="off" placeholder="<%= lang.form.search.usu_login.placeholder %>"/>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-group">
+                  <label class="label-form-control" data-form="true" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="<%= lang.form.search.usu_email.label %>" data-content="<%= lang.form.search.usu_email.title %>">
+                    <%= lang.form.search.usu_email.label %>
+                  </label>
+                  <input type="text" name="usu_email" id="usu_email" data-bind="{{usu_email}}" class="form-control available string" autocomplete="off" placeholder="<%= lang.form.search.usu_email.placeholder %>"/>
+                </div>
+              </div>
+            </div>
+            <div id="target-2-line-6" class="row">
+              <div class="col-md-12 col-sm-12">
+                <div class="form-group">
+                  <label class="label-form-control" data-form="true" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="<%= lang.form.search.usu_administrador.label %>" data-content="<%= lang.form.search.usu_administrador.title %>">
+                    <%= lang.form.search.usu_administrador.label %>
+                  </label>
+                  <div class="inline-group">
+                    <fieldset>
+                      <div class="radio radio-inline">
+                        <label>
+                          <input type="radio" name="usu_administrador" id="usu_administrador_0" value="<%= lang.form.search.usu_administrador.options[0].value %>" data-bind="{{usu_administrador}}"/>
+                          <%= lang.form.search.usu_administrador.options[0].label %>
+                        </label>
+                      </div>
+                      <div class="radio radio-inline">
+                        <label>
+                          <input type="radio" name="usu_administrador" id="usu_administrador_1" value="<%= lang.form.search.usu_administrador.options[1].value %>" data-bind="{{usu_administrador}}"/>
+                            <%= lang.form.search.usu_administrador.options[1].label %>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="target-2-line-9" class="row">
+              <div class="col-md-12 col-sm-12">
+                <div class="form-group">
+                  <label class="label-form-control" data-form="true" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="<%= lang.form.search.usu_ativo.label %>" data-content="<%= lang.form.search.usu_ativo.title %>">
+                    <%= lang.form.search.usu_ativo.label %>
+                  </label>
+                  <div class="inline-group">
+                    <fieldset>
+                      <div class="checkbox checkbox-inline">
+                        <label>
+                          <input type="checkbox"> <%= lang.form.search.usu_ativo.options[0] %>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="target-2-line-10" class="row">
+              <div class="col-md-12 col-sm-12">
+                <div class="form-group">
+                  <label class="label-form-control" data-form="true" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="<%= lang.form.search.usu_level.label %>" data-content="<%= lang.form.search.usu_level.title %>">
+                    <%= lang.form.search.usu_level.label %>
+                  </label>
+                  <div class="inline-group">
+                    <select class="form-control" id="select">
+                      <% lang.form.search.usu_level.options.forEach(function(option){ %>
+                        <option><%= option %></option>
+                      <% }) %>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+    <div class="panel toolbar-bottom">
+      <div class="panel-body">
+        
+        <%- toolbar.bottom %>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

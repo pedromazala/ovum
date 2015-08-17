@@ -1,0 +1,225 @@
+{
+  "toolbar":{
+    "search":{
+       "options":{"label":"Opções"}
+      , "list":{"label":"Localizar"}
+      , "add":{"label":"Novo"}
+      , "search":{"label":"Pesquisar"}
+      , "back":{"label":"Voltar"}
+    },
+    "set":{
+       "options":{"label":"Opções"}
+      , "save":{"label":"Salvar"}
+      , "add":{"label":"Novo"}
+      , "search":{"label":"Pesquisar"}
+      , "back":{"label":"Voltar"}
+    },
+    "list":{
+       "options":{"label":"Opções"}
+      , "add":{"label":"Novo"}
+      , "search":{"label":"Pesquisar"}
+      , "clear":{"label":"Limpar"}
+    }
+  }
+  , "form": {
+    "search":{
+       "header":{
+           "label":"Pesquisar"
+         , "child":{
+           "label":"Permissões"
+         }
+       }
+      , "usu_codigo":{
+          "label":"Código"
+        , "placeholder":"Código"
+        , "title":"Código"
+      }
+      , "usu_cod_USUARIO_TIPO":{
+          "label":"Tipo"
+        , "placeholder":"Tipo"
+        , "title":"Tipo"
+      }
+      , "usu_cod_INSTITUICAO":{
+          "label":"Instituição"
+        , "placeholder":"Instituição"
+        , "title":"Instituição"
+      }
+      , "usu_nome":{
+          "label":"Nome"
+        , "placeholder":"Nome"
+        , "title":"Nome"
+      }
+      , "usu_telefone":{
+          "label":"Telefone"
+        , "placeholder":"Telefone"
+        , "title":"Telefone"
+      }
+      , "usu_celular":{
+          "label":"Celular"
+        , "placeholder":"Celular"
+        , "title":"Celular"
+      }
+      , "usu_login":{
+          "label":"Login"
+        , "placeholder":"Login"
+        , "title":"Login"
+      }
+      , "usu_email":{
+          "label":"E-mail"
+        , "placeholder":"E-mail"
+        , "title":"E-mail"
+      }
+      , "usu_administrador":{
+          "label":"Administrador"
+        , "placeholder":"Administrador"
+        , "title":"Administrador"
+        , "options":[{"label":"Sim","value":"1"},{"label":"Não","value":"0"}]
+      }
+      , "usu_ativo":{
+          "label":"Ativo"
+        , "placeholder":"Ativo"
+        , "title":"Ativo"
+        , "options":["Permitir que o Usuário tenha acesso ao sistema"]
+      }
+      , "usu_level":{
+          "label":"Nível"
+        , "placeholder":"Nível"
+        , "title":"Nível"
+        , "options":["Nível Alto", "Nível Baixo", "Nível Supremo"]
+      }
+    },
+    "set":{
+       "header":{
+           "label":"Editar"
+         , "child":{
+           "label":"Permissões"
+         }
+       }
+      , "usu_codigo":{
+          "label":"Código"
+        , "placeholder":"Código"
+        , "title":"Código"
+      }
+      , "usu_cod_USUARIO_TIPO":{
+          "label":"Tipo"
+        , "placeholder":"Tipo"
+        , "title":"Tipo"
+      }
+      , "usu_cod_INSTITUICAO":{
+          "label":"Instituição"
+        , "placeholder":"Instituição"
+        , "title":"Instituição"
+      }
+      , "usu_nome":{
+          "label":"Nome"
+        , "placeholder":"Nome"
+        , "title":"Nome"
+      }
+      , "usu_telefone":{
+          "label":"Telefone"
+        , "placeholder":"Telefone"
+        , "title":"Telefone"
+      }
+      , "usu_celular":{
+          "label":"Celular"
+        , "placeholder":"Celular"
+        , "title":"Celular"
+      }
+      , "usu_login":{
+          "label":"Login"
+        , "placeholder":"Login"
+        , "title":"Login"
+      }
+      , "usu_email":{
+          "label":"E-mail"
+        , "placeholder":"E-mail"
+        , "title":"E-mail"
+      }
+      , "usu_administrador":{
+          "label":"Administrador"
+        , "placeholder":"Administrador"
+        , "title":"Administrador"
+        , "options":[{"label":"Sim","value":"1"},{"label":"Não","value":"0"}]
+      }
+      , "usu_ativo":{
+          "label":"Ativo"
+        , "placeholder":"Ativo"
+        , "title":"Ativo"
+        , "options":["Permitir que o Usuário tenha acesso ao sistema"]
+      }
+      , "usu_level":{
+          "label":"Nível"
+        , "placeholder":"Nível"
+        , "title":"Nível"
+        , "options":["Nível Alto", "Nível Baixo", "Nível Supremo"]
+      }
+    },
+    "list":{
+       "header":{
+           "title":"Usuários"
+         , "label":"Usuários"
+         , "child":{
+           "label":""
+         }
+       }
+      , "usu_codigo":{
+          "label":"Código"
+        , "placeholder":"Código"
+        , "title":"Código"
+      }
+      , "usu_cod_USUARIO_TIPO":{
+          "label":"Tipo"
+        , "placeholder":"Tipo"
+        , "title":"Tipo"
+      }
+      , "usu_cod_INSTITUICAO":{
+          "label":"Instituição"
+        , "placeholder":"Instituição"
+        , "title":"Instituição"
+      }
+      , "usu_nome":{
+          "label":"Nome"
+        , "placeholder":"Nome"
+        , "title":"Nome"
+      }
+      , "usu_telefone":{
+          "label":"Telefone"
+        , "placeholder":"Telefone"
+        , "title":"Telefone"
+      }
+      , "usu_celular":{
+          "label":"Celular"
+        , "placeholder":"Celular"
+        , "title":"Celular"
+      }
+      , "usu_login":{
+          "label":"Login"
+        , "placeholder":"Login"
+        , "title":"Login"
+      }
+      , "usu_email":{
+          "label":"E-mail"
+        , "placeholder":"E-mail"
+        , "title":"E-mail"
+      }
+      , "usu_administrador":{
+          "label":"Administrador"
+        , "placeholder":"Administrador"
+        , "title":"Administrador"
+        , "options":[{"label":"Sim","value":"1"},{"label":"Não","value":"0"}]
+      }
+      , "usu_ativo":{
+          "label":"Ativo"
+        , "placeholder":"Ativo"
+        , "title":"Ativo"
+        , "options":["Permitir que o Usuário tenha acesso ao sistema"]
+      }
+      , "usu_level":{
+          "label":"Nível"
+        , "placeholder":"Nível"
+        , "title":"Nível"
+        , "options":["Nível Alto", "Nível Baixo", "Nível Supremo"]
+      }
+    }
+  }
+}

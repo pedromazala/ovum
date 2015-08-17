@@ -1,0 +1,18 @@
+{
+  "name": "ovum.root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dracones.io",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.3.3",
+    "fastclick": "^1.0.6",
+    "mysql": "^2.8.0",
+    "node-firebird": "^0.6.7",
+    "node-mysql": "^0.4.2"
+  }
+}
